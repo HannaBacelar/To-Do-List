@@ -6,11 +6,11 @@ let capturaButton = document.querySelector("#criar-tarefa")
 
 /**capturar o que está no innput */
 capturaButton.addEventListener("click", lidaComInput)
-
 function lidaComInput() {
     if (capturandoInput.value !== '') {
         let criaLi = document.createElement("li")
         criaLi.innerText = capturandoInput.value
+        criaLi.addEventListener("dblclick", riscaItem)
         capturaOl.appendChild(criaLi)
         capturandoInput.value = '';
     }
@@ -25,15 +25,15 @@ function aletaraCorDeFundo(event) {
     event.target.style.backgroundColor = 'rgb(128, 128, 128)';
 }
 
+function riscaItem(event) {
+    if (event.target.style.textDecoration === '') {
+        event.target.classList.add('completed')
+        event.target.style.textDecoration = 'line-through solid rgb(0, 0, 0)'
+    }else {
+        event.target.style.textDecoration = ''
+        event.target.className = ''
 
+    }
 
-
-
-
-
-
-
-
-
-
-
+    
+}
