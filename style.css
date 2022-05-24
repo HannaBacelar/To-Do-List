@@ -1,3 +1,22 @@
 body {
-    background-color: blue;
+    background-color: rgb(233, 158, 156);
+    text-align: center;
 }
+
+#criar-tarefa {
+    background-color: rgb(242, 126, 161);
+    font-size: 16px;
+    border-radius: 20px;
+    border: 2px solid rgb(252, 251, 252);
+    
+}
+
+#titulo {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 1px 3px white;
+    
+}
+#funcionamento {
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
